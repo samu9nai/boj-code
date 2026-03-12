@@ -1,22 +1,25 @@
-/**
- * Baekjoon Online Judge 문제 풀이
- */
 import java.util.*;
 import java.io.*;
 
-public class Template {
+public class Main {
     public void solution() throws Exception {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
+        int a = Integer.parseInt(st.nextToken());
 
-        br.close();
+        if (a >= 90) bw.write("A");
+        else if (a >= 80) bw.write("B");
+        else if (a >= 70) bw.write("C");
+        else if (a >= 60) bw.write("D");
+        else bw.write("F");       
+
         bw.flush();
         bw.close();
-
+        br.close();
     }
 
     public static void main(String[] args) throws Exception {
-        new Template().solution();
+        new Main().solution();
     }
 }

@@ -1,22 +1,29 @@
 /**
  * Baekjoon Online Judge 문제 풀이
  */
+
 import java.util.*;
 import java.io.*;
 
-public class Template {
+public class Main {
     public void solution() throws Exception {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
+        int T = Integer.parseInt(br.readLine());
         br.close();
+
+        for  (int i = 1; i <= T; i++) {
+            for (int j = 1; j <= i; j++) {
+                bw.write("*");
+            }
+            bw.newLine();
+        }
         bw.flush();
         bw.close();
 
     }
 
     public static void main(String[] args) throws Exception {
-        new Template().solution();
+        new Main().solution();
     }
 }
