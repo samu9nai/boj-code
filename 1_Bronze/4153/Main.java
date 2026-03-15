@@ -19,10 +19,12 @@ public class Main {
             if (sides[0] == 0) break;
 
             if (sides[0] * sides[0] + sides[1] * sides[1] == sides[2] * sides[2]) {
-                System.out.println("right\n");
+                bw.write("right\n");
             } else {
-                System.out.println("wrong\n");
+                bw.write("wrong\n");
             }
+
+            bw.flush();
         }
     }
 }
