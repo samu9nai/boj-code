@@ -2,7 +2,7 @@
 
 ## Language
 
-- Java 11
+- Java 11 (OpenJDK 11)
 
 ## IDE
 
@@ -11,7 +11,7 @@
 ## Profile
 
 [Baekjoon Online Judge](https://www.acmicpc.net/user/chino)
-[Solved.ac](https://solved.ac/profile/chino)
+[solved.ac](https://solved.ac/profile/chino)
 
 </br>
 
