@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     static final int MAX = 1000;
 
     public static void main(String[] args) throws IOException {
@@ -13,7 +14,7 @@ public class Main {
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
-        } 
+        }
 
         boolean[] isPrime = sieve();
         int cnt = 0;

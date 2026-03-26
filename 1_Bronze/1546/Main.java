@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -15,7 +16,7 @@ public class Main {
         Arrays.sort(arr);
 
         for (int i = 0; i < n; i++) {
-            arr[i] = arr[i] / arr[n - 1] * 100;
+            arr[i] = (arr[i] / arr[n - 1]) * 100;
         }
 
         double sum = 0;

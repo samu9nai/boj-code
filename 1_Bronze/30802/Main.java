@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
@@ -21,10 +22,10 @@ public class Main {
 
         int cnt = 0;
         for (int i : size) {
-            cnt += (i + t -1) / t;
+            cnt += (i + t - 1) / t;
         }
 
         System.out.println(cnt);
-        System.out.println(n / p + " " + n % p);
+        System.out.println(n / p + " " + (n % p));
     }
 }

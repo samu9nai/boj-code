@@ -2,9 +2,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     static final int MAX = 2000000;
     static int[] queue = new int[MAX];
-    static int front = 0, rear = 0;
+    static int front = 0,
+        rear = 0;
 
     static void push(int x) {
         queue[rear++] = x;
@@ -36,7 +38,7 @@ public class Main {
         StringTokenizer st;
 
         int n = Integer.parseInt(br.readLine());
-        
+
         while (n-- > 0) {
             st = new StringTokenizer(br.readLine());
             String cmd = st.nextToken();
@@ -46,46 +48,42 @@ public class Main {
                     int x = Integer.parseInt(st.nextToken());
                     push(x);
                     break;
-
                 case "pop":
                     if (empty()) {
                         sb.append("-1\n");
                     } else {
                         sb.append(pop()).append("\n");
-                    }   break;
-
+                    }
+                    break;
                 case "size":
                     sb.append(size()).append("\n");
                     break;
-
                 case "empty":
                     if (empty()) {
                         sb.append("1\n");
                     } else {
                         sb.append("0\n");
-                    }   break;
-
+                    }
+                    break;
                 case "front":
                     if (empty()) {
                         sb.append("-1\n");
                     } else {
                         sb.append(front()).append("\n");
-                    }   break;
-
+                    }
+                    break;
                 case "back":
-                if (empty()) {
+                    if (empty()) {
                         sb.append("-1\n");
                     } else {
                         sb.append(back()).append("\n");
-                    }   break;
-
-
+                    }
+                    break;
                 default:
                     break;
             }
         }
 
         System.out.println(sb);
-
     }
 }

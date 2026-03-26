@@ -1,4 +1,5 @@
 public class Main {
+
     public void solution() throws Exception {
         System.out.println("\\    /\\");
         System.out.println(" )  ( ')");

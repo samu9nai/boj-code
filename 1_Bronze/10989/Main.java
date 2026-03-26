@@ -1,6 +1,7 @@
 import java.io.*;
 
 public class Main {
+
     static final int MAX = 10000;
     static int[] cnt = new int[MAX + 1];
 

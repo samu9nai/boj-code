@@ -1,10 +1,11 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
 public class Main {
+
     public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
+
         boolean[] assigned = new boolean[31];
         for (int i = 0; i < 28; i++) {
             int n = Integer.parseInt(br.readLine());

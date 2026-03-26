@@ -12,22 +12,21 @@ import java.util.StringTokenizer;
  */
 public class Main {
 
-	public static void main(String[] args) throws Exception {
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
-		
-		int T = Integer.parseInt(br.readLine());
-		for(int test = 0 ; test < T ; test++) {
-			st = new StringTokenizer(br.readLine());
-			int A = Integer.parseInt(st.nextToken());
-			int B = Integer.parseInt(st.nextToken());
-			bw.write(A + B + "\n"); // "\n" 대신에 bw.newLine(); 을 쓸 수도 있습니다.
-		}
-		
-        bw.flush();
-		bw.close();
-		br.close();
-	}
+    public static void main(String[] args) throws Exception {
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
 
+        int T = Integer.parseInt(br.readLine());
+        for (int test = 0; test < T; test++) {
+            st = new StringTokenizer(br.readLine());
+            int A = Integer.parseInt(st.nextToken());
+            int B = Integer.parseInt(st.nextToken());
+            bw.write(A + B + "\n"); // "\n" 대신에 bw.newLine(); 을 쓸 수도 있습니다.
+        }
+
+        bw.flush();
+        bw.close();
+        br.close();
+    }
 }

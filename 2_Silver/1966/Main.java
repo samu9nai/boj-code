@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -26,9 +27,7 @@ public class Main {
         }
     }
 
-    private static void solution(int index,
-    Deque<Integer> deque,
-    Deque<Integer> priorityDeque) {
+    private static void solution(int index, Deque<Integer> deque, Deque<Integer> priorityDeque) {
         int cnt = 1;
 
         while (!deque.isEmpty()) {

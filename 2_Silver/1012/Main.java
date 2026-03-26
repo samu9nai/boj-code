@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     static int[] dr = { -1, 0, 1, 0 }; // delta row
     static int[] dc = { 0, 1, 0, -1 }; // delta column
     static int n, m;
@@ -45,7 +46,7 @@ public class Main {
 
     static void bfs(int sr, int sc) {
         Queue<int[]> q = new ArrayDeque<>();
-        q.offer(new int[]{ sr, sc });
+        q.offer(new int[] { sr, sc });
 
         lettuce[sr][sc] = false;
 
@@ -59,7 +60,7 @@ public class Main {
                 if (nr < 0 || nr >= n || nc < 0 || nc >= m) continue;
                 if (!lettuce[nr][nc]) continue;
 
-                q.offer(new int[]{nr, nc});
+                q.offer(new int[] { nr, nc });
                 lettuce[nr][nc] = false;
             }
         }

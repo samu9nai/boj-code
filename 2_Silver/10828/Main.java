@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     static final int MAX = 10000;
     static int[] stack = new int[MAX];
     static int pos = 0;
@@ -32,7 +33,7 @@ public class Main {
         StringTokenizer st;
 
         int n = Integer.parseInt(br.readLine());
-        
+
         while (n-- > 0) {
             st = new StringTokenizer(br.readLine());
             String c = st.nextToken();
@@ -64,6 +65,5 @@ public class Main {
         }
 
         System.out.println(sb);
-
     }
 }

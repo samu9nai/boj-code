@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
@@ -13,7 +14,7 @@ public class Main {
             arr.add(Integer.valueOf(br.readLine()));
         }
         Collections.sort(arr);
-        
+
         for (int x : arr) {
             sb.append(x).append("\n");
         }

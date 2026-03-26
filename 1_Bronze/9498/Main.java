@@ -1,7 +1,8 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
 public class Main {
+
     public void solution() throws Exception {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -12,7 +13,7 @@ public class Main {
         else if (a >= 80) bw.write("B");
         else if (a >= 70) bw.write("C");
         else if (a >= 60) bw.write("D");
-        else bw.write("F");       
+        else bw.write("F");
 
         bw.flush();
         bw.close();

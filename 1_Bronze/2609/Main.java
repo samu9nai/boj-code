@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -19,6 +20,6 @@ public class Main {
     }
 
     static int lcm(int a, int b) {
-        return a / gcd(a, b) * b;
+        return (a / gcd(a, b)) * b;
     }
 }

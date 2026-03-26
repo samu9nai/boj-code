@@ -4,6 +4,7 @@ import java.util.*;
 public class Main {
 
     static class User {
+
         int age;
         String name;
 

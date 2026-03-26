@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -19,8 +20,8 @@ public class Main {
         for (int i = range; i < n - range; i++) {
             sum += arr.get(i);
         }
-        
-        int avg = Math.round((float) sum / (n - range * 2)); 
+
+        int avg = Math.round((float) sum / (n - range * 2));
         System.out.println(avg);
     }
 }

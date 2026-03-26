@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -17,7 +18,10 @@ public class Main {
                 if (c == '(' || c == '[') {
                     stack.push(c);
                 } else if (c == ')' || c == ']') {
-                    if (!stack.isEmpty() && (stack.peek() == '(' && c == ')' || stack.peek() == '[' && c == ']')) {
+                    if (
+                        !stack.isEmpty() &&
+                        ((stack.peek() == '(' && c == ')') || (stack.peek() == '[' && c == ']'))
+                    ) {
                         stack.pop();
                     } else {
                         balanced = false;

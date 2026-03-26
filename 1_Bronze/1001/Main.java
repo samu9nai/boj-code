@@ -2,11 +2,12 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    public void solution() throws Exception{
+
+    public void solution() throws Exception {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        
+
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
 
@@ -19,7 +20,7 @@ public class Main {
         bw.close();
     }
 
-    public static void main(String[] args) throws Exception{
-        new Main().solution(); 
+    public static void main(String[] args) throws Exception {
+        new Main().solution();
     }
 }

@@ -1,6 +1,7 @@
 import java.io.*;
 
 public class Main {
+
     static final int R = 31;
     static final int M = 1234567891;
 
@@ -18,6 +19,6 @@ public class Main {
     }
 
     static long pow(int a, int b) {
-        return b == 0 ? 1 : a * pow(a, b - 1) % M;
+        return b == 0 ? 1 : (a * pow(a, b - 1)) % M;
     }
 }

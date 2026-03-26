@@ -2,16 +2,16 @@
  * Baekjoon Online Judge 문제 풀이
  */
 
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
 public class Main {
+
     public void solution() throws Exception {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         String line;
-
 
         while ((line = br.readLine()) != null) {
             st = new StringTokenizer(line, " ");
@@ -24,7 +24,6 @@ public class Main {
         br.close();
         bw.flush();
         bw.close();
-
     }
 
     public static void main(String[] args) throws Exception {

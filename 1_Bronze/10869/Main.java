@@ -1,7 +1,8 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
 public class Main {
+
     public void solution() throws Exception {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -14,7 +15,7 @@ public class Main {
         bw.write(A - B + "\n");
         bw.write(A * B + "\n");
         bw.write(A / B + "\n");
-        bw.write(A % B + "\n");
+        bw.write((A % B) + "\n");
 
         bw.flush();
         bw.close();
